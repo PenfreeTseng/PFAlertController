@@ -15,6 +15,12 @@
 		216F3FCB1DC337D400EA0418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216F3FC91DC337D400EA0418 /* LaunchScreen.storyboard */; };
 		216F3FD61DC337D400EA0418 /* PFAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F3FD51DC337D400EA0418 /* PFAlertControllerTests.m */; };
 		216F3FE11DC337D400EA0418 /* PFAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F3FE01DC337D400EA0418 /* PFAlertControllerUITests.m */; };
+		216F3FFA1DC337EB00EA0418 /* PFAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F3FF01DC337EB00EA0418 /* PFAlertAction.m */; };
+		216F3FFB1DC337EB00EA0418 /* PFAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F3FF21DC337EB00EA0418 /* PFAlertController.m */; };
+		216F3FFC1DC337EB00EA0418 /* PFAlertDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F3FF41DC337EB00EA0418 /* PFAlertDismissTransition.m */; };
+		216F3FFD1DC337EB00EA0418 /* PFAlertPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F3FF61DC337EB00EA0418 /* PFAlertPopTransition.m */; };
+		216F3FFE1DC337EB00EA0418 /* PFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F3FF81DC337EB00EA0418 /* PFAlertView.m */; };
+		216F3FFF1DC337EB00EA0418 /* PFAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 216F3FF91DC337EB00EA0418 /* PFAlertView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		216F3FDC1DC337D400EA0418 /* PFAlertControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PFAlertControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		216F3FE01DC337D400EA0418 /* PFAlertControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFAlertControllerUITests.m; sourceTree = "<group>"; };
 		216F3FE21DC337D400EA0418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		216F3FEF1DC337EB00EA0418 /* PFAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAlertAction.h; sourceTree = "<group>"; };
+		216F3FF01DC337EB00EA0418 /* PFAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAlertAction.m; sourceTree = "<group>"; };
+		216F3FF11DC337EB00EA0418 /* PFAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAlertController.h; sourceTree = "<group>"; };
+		216F3FF21DC337EB00EA0418 /* PFAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAlertController.m; sourceTree = "<group>"; };
+		216F3FF31DC337EB00EA0418 /* PFAlertDismissTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAlertDismissTransition.h; sourceTree = "<group>"; };
+		216F3FF41DC337EB00EA0418 /* PFAlertDismissTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAlertDismissTransition.m; sourceTree = "<group>"; };
+		216F3FF51DC337EB00EA0418 /* PFAlertPopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAlertPopTransition.h; sourceTree = "<group>"; };
+		216F3FF61DC337EB00EA0418 /* PFAlertPopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAlertPopTransition.m; sourceTree = "<group>"; };
+		216F3FF71DC337EB00EA0418 /* PFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAlertView.h; sourceTree = "<group>"; };
+		216F3FF81DC337EB00EA0418 /* PFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAlertView.m; sourceTree = "<group>"; };
+		216F3FF91DC337EB00EA0418 /* PFAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PFAlertView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,7 @@
 		216F3FBA1DC337D400EA0418 /* PFAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				216F3FEE1DC337EB00EA0418 /* PFAlertController */,
 				216F3FBE1DC337D400EA0418 /* AppDelegate.h */,
 				216F3FBF1DC337D400EA0418 /* AppDelegate.m */,
 				216F3FC11DC337D400EA0418 /* ViewController.h */,
@@ -138,6 +156,24 @@
 				216F3FE21DC337D400EA0418 /* Info.plist */,
 			);
 			path = PFAlertControllerUITests;
+			sourceTree = "<group>";
+		};
+		216F3FEE1DC337EB00EA0418 /* PFAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				216F3FEF1DC337EB00EA0418 /* PFAlertAction.h */,
+				216F3FF01DC337EB00EA0418 /* PFAlertAction.m */,
+				216F3FF11DC337EB00EA0418 /* PFAlertController.h */,
+				216F3FF21DC337EB00EA0418 /* PFAlertController.m */,
+				216F3FF31DC337EB00EA0418 /* PFAlertDismissTransition.h */,
+				216F3FF41DC337EB00EA0418 /* PFAlertDismissTransition.m */,
+				216F3FF51DC337EB00EA0418 /* PFAlertPopTransition.h */,
+				216F3FF61DC337EB00EA0418 /* PFAlertPopTransition.m */,
+				216F3FF71DC337EB00EA0418 /* PFAlertView.h */,
+				216F3FF81DC337EB00EA0418 /* PFAlertView.m */,
+				216F3FF91DC337EB00EA0418 /* PFAlertView.xib */,
+			);
+			path = PFAlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				216F3FCB1DC337D400EA0418 /* LaunchScreen.storyboard in Resources */,
+				216F3FFF1DC337EB00EA0418 /* PFAlertView.xib in Resources */,
 				216F3FC81DC337D400EA0418 /* Assets.xcassets in Resources */,
 				216F3FC61DC337D400EA0418 /* Main.storyboard in Resources */,
 			);
@@ -271,8 +308,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				216F3FC31DC337D400EA0418 /* ViewController.m in Sources */,
+				216F3FFE1DC337EB00EA0418 /* PFAlertView.m in Sources */,
+				216F3FFD1DC337EB00EA0418 /* PFAlertPopTransition.m in Sources */,
 				216F3FC01DC337D400EA0418 /* AppDelegate.m in Sources */,
+				216F3FFC1DC337EB00EA0418 /* PFAlertDismissTransition.m in Sources */,
+				216F3FFA1DC337EB00EA0418 /* PFAlertAction.m in Sources */,
 				216F3FBD1DC337D400EA0418 /* main.m in Sources */,
+				216F3FFB1DC337EB00EA0418 /* PFAlertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

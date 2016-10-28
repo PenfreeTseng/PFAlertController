@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PFAlertController.h"
 
 @interface ViewController ()
 
@@ -19,9 +20,16 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    PFAlertController *ac = [PFAlertController alertWithTitle:@"我是标题" message:@"我是消息"];
+    PFAlertAction *confirm = [PFAlertAction actionWithTitle:@"确定" style:PFAlertActionStyleDestructive handler:^{
+        NSLog(@"点击了确定");
+    }];
+    PFAlertAction *cancel = [PFAlertAction actionWithTitle:@"取消" style:PFAlertActionStyleCancel handler:^{
+        NSLog(@"点击了取消");
+    }];
+    [ac addAction:cancel];
+    [ac addAction:confirm];
+    [self presentViewController:ac animated:YES completion:nil];
 }
-
 @end
